@@ -6,6 +6,7 @@ phases:
           - echo Build started on `date`
           - |
             echo "------------------build app image-----------------------------------------------"
+            echo $CODEBUILD_SRC_DIR
             set -e
             cd $CODEBUILD_SRC_DIR
             docker build .
