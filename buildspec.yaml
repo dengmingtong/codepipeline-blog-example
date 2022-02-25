@@ -8,6 +8,6 @@ phases:
             echo "------------------build app image-----------------------------------------------"
             echo $CODEBUILD_SRC_DIR
             set -e
-            cd $CODEBUILD_SRC_DIR
+            cd codepipeline-blog-example-main
             ls
             docker build .
