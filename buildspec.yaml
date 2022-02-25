@@ -8,4 +8,4 @@ phases:
             echo "------------------build app image-----------------------------------------------"
             set -e
             cd $CODEBUILD_SRC_DIR
-            docker build . -t $APP_IMAGE:$IMAGE_TAG
+            docker build .
